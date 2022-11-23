@@ -20,3 +20,9 @@ select * from addressbook
 
 update addressbook set City='Mumbai' where FirstName = 'mahesh';
 select * from addressbook
+
+delete from addressbook where FirstName= 'mahesh';
+
+select * from addressbook
+
+
