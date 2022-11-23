@@ -48,3 +48,15 @@ select count(*) as StateCount,State
 select * from addressbook where City= 'Nagpur' order by FirstName;
 
 
+alter table addressbook
+add type varchar(20);
+alter table addressbook
+add addresbookname varchar(50);
+
+update addressbook set type='Friends' where City='Nagpur';
+update addressbook set type='office' where City='Mumbai';
+update addressbook set type='relative' where City='Nashik';
+
+update addressbook set addresbookname ='Normal' where FirstName='rita';
+select * from addressbook
+
