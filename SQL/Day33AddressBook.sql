@@ -17,3 +17,6 @@ values
 ('mahesh','g','9b nagar','nashik','maharashtra',424008,'9812345678','gagag@gmail.com');
 
 select * from addressbook
+
+update addressbook set City='Mumbai' where FirstName = 'mahesh';
+select * from addressbook
