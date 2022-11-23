@@ -62,3 +62,10 @@ select * from addressbook
 
 
 select type,count(type) as NumberofContactPerson from addressbook group by type;
+
+
+insert into addressbook(FirstName,LastNames,Address,City,State,Zip,PhoneNumber,Email,type)
+values
+('narendra','modi','newdelhi','delhi','NCR',424008,'9812345678','gagag@gamil.com','relative');
+
+select * from addressbook
