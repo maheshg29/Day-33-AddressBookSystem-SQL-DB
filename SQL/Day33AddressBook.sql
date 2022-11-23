@@ -34,3 +34,17 @@ values
 select * from addressbook
 
 select * from addressbook where City='Nagpur' or State='maharashtra'
+
+insert into addressbook(FirstName,LastNames,Address,City,State,Zip,PhoneNumber,Email)
+values
+('hemant','g','9b nagar','nashik','maharashtra',424008,'9812345678','gagag@gmail.com'),
+('rita','g','9b nagar','Nagpur','maharashtra',424008,'9812345678','gagag@gmail.com')
+
+select * from addressbook
+
+select count(*) as CityCount,City from addressbook group by City;
+select count(*) as StateCount,State
+
+select * from addressbook where City= 'Nagpur' order by FirstName;
+
+
