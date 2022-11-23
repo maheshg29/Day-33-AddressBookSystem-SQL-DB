@@ -60,3 +60,5 @@ update addressbook set type='relative' where City='Nashik';
 update addressbook set addresbookname ='Normal' where FirstName='rita';
 select * from addressbook
 
+
+select type,count(type) as NumberofContactPerson from addressbook group by type;
